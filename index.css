@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: url("https://i.pinimg.com/originals/84/19/94/8419940537aba4e5d3f7180c0b99f355.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 1200px;
+    margin: 30px auto;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 25px;
+    border-radius: 15px;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.left-col {
+    width: 30%;
+    padding-bottom: 45px;
+}
+
+.test-list {
+    list-style-type: none;
+    padding-left: 0;
+    width: 90%;
+    margin-top: 100px;
+    color: white;
+}
+
+.test-list__item {
+    display: flex;
+    place-content: space-between;
+    cursor: pointer;
+    background: rgba(91, 94, 93, 0.327);
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.test-list__item:hover {
+    background: rgba(43, 45, 44, 0.7);
+}
+
+.test-list__item__icon {
+    width: 70px;
+}
+
+.main {
+    display: flex;
+    padding-top: 25px;
+}
+
+.text-logo {
+    margin: 0;
+    font-weight: 800;
+    font-size: 25px;
+    color: rgb(215, 0, 90);
+}
+
+.header {
+    font-size: 35px;
+    margin-bottom: 35px;
+    margin-top: 0;
+    color: white;
+}
+
+.underheader {
+    font-size: 13px;
+    width: 70%;
+    color: white;
+    font-weight: 300;
+}
+
+.test-list__item__header {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.test-list__item__underheader {
+    margin: 0;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.wrapper {
+    margin: auto 0;
+    margin-right: 50px;
+}
+
+.test-header {
+    margin-top: 0;
+    color: black;
+}
+
+.right-col {
+    background: white;
+    width: 70%;
+    margin-left: 50px;
+    color: black;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.question-block {
+    padding-bottom: 25px;
+}
+
+.answers-block {
+    display: flex;
+    width: 70%;
+}
+
+.answer-block__item {
+    border: 1px solid #80808049;
+    margin-right: 15px;
+    flex: 1;
+    padding: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.answer-block__item:has(input:checked) {
+    font-weight: 600;
+    border: 1px solid rgb(215, 0, 90);
+}
+
+input:checked {
+    accent-color: rgb(215, 0, 90);
+}
+
+.question-block__text {
+    font-size: 20px;
+}
+
+.test-list__item_selected {
+    background: rgba(43, 45, 44, 0.9);
+    
+}
+
+.level2, .level3 {
+    display: none;
+}
+
+.btn {
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    background: rgb(215, 0, 90);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.result {
+    display: none;
+}
+
+span {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .main {
+        display: block;
+    }
+
+    .left-col {
+        width: auto;
+        padding-left: 5%;
+    }
+
+    .right-col {
+        margin: 0;
+        width: auto;
+    }
+
+    .container {
+        padding-left: 0;
+    }
+
+    .text-logo {
+        padding-left: 5%;
+    }
+
+    .answers-block {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .answers-block {
+        display: block;
+    }
+
+    .answer-block__item {
+        margin: 10px 0;
+    }
+}
